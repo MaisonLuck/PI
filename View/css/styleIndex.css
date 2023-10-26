@@ -1,0 +1,325 @@
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-image: url(../imagens/fundoLogin/materiais.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.box{
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ column-gap: 30px;
+ background-color: #0000006c;
+}
+.form{
+ margin-top: 1.875rem;
+ max-width: 40%;
+ width: 100%;
+ padding: 2.5em 4.5em;
+ border-radius: 0.5em;
+ background: rgba(255, 255, 255, 0.925);
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header{
+ text-align: center;
+}
+
+.img_logo{
+ width: 64px;
+ margin-bottom: 1em;
+}
+
+header h1{
+ font-size: 2.2em;
+ font-weight: 600;
+ color: #000000;
+ font-style: normal;
+ line-height: normal;
+ margin-bottom: 0.5rem;
+}
+header h3{
+ font-size: 1.1em;
+ font-weight: 400;
+ color: #000000;
+ font-style: normal;
+ line-height: normal;
+ margin-bottom: 1.5em;
+}
+.form .dados{
+ position: relative;
+ height: 3.125rem;
+ width: 100%;
+ margin: 1.25rem auto;
+ border-radius: 0.375rem;
+}
+.dados input,
+.dados button{
+ height: 100%;
+ width: 100%;
+ border: none;
+ font-size: medium;
+ font-weight: 400;
+ border-radius: 0.375rem;
+}
+.dados input{
+ outline: none;
+ padding: 0 0.9375rem;
+ border: 1px solid#CACACA;
+}
+.dados input:focus{
+ border-bottom-width: 2px;
+ box-shadow: 0.3px 0.6px #14213D;
+}
+.eye-icon{
+ position: absolute;
+ top: 50%;
+ right: 10px;
+ transform: translateY(-50%);
+ font-size: 18px;
+ color: #8b8b8b;
+ cursor: pointer;
+ padding: 5px;
+}
+
+.form-link{
+ display: flex;
+ justify-content: space-between;
+ text-align: center;
+ margin: 0.2em auto 0.5em;
+}
+.remember{
+ display: flex;
+ justify-content: space-around;
+}
+#lembrar{
+ margin-right: 0.4em;
+}
+.form-link .txtRem,
+.form-link a{
+ font-size: 14px;
+ font-weight: 400;
+ color: #000;
+}
+.form a{
+ text-decoration: none;
+}
+.form-conteudo a:hover{
+ text-decoration: underline;
+ color: #1645ac;
+}
+
+/* BOTÃO LOGIN - INDEX.PHP */
+.sign{
+ position: relative;
+ display: inline-block;
+ background: transparent;
+ box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ outline: none;
+ width: 100%;
+ height: 2.95em;
+ padding: 10px 25px;
+ margin: 3% auto;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ 
+ color: #ffffff;
+ font-size: medium;
+ letter-spacing: 0.16em;
+ font-weight: bold;
+}
+.btn-login{
+ background: #14213D;
+ background: linear-gradient(0deg, #14213D 0%, #0c348b 100%);
+ border: none;
+}
+.btn-login:before {
+ height: 0%;
+ width: 2px;
+}
+.btn-login:hover {
+ background: rgb(0,3,255);
+ background: linear-gradient(0deg, rgb(0, 17, 255) 0%, rgba(2,126,251,1) 100%);
+}
+
+/* BOTÕES VOLTAR E ENVIAR - recuperarSenha.PHP */
+#btnSen{
+ display: flex;
+ justify-content: space-between;
+}
+.recup{
+ position: relative;
+ display: inline-block;
+ background: transparent;
+ box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+ outline: none;
+ margin: 1% 0;
+ width: 45%;
+ height: 2.95em;
+ padding: 0.625rem 1.5625rem;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ 
+ color: #ffffff;
+ font-size: medium;
+ letter-spacing: 0.16em;
+ font-weight: bold;
+}
+.btn-VE{
+ background: #14213D;
+ background: linear-gradient(0deg, #14213D 0%, #0c348b 100%);
+ border: none;
+}
+.btn-VE:before {
+ height: 0%;
+ width: 2px;
+}
+.btn-VE:hover {
+ background: rgb(0,3,255);
+ background: linear-gradient(0deg, rgb(0, 17, 255) 0%, rgba(2,126,251,1) 100%);
+}
+
+@media screen and (max-width: 1440px){
+ .form{
+   max-width: 50%;
+   padding: 3.75em 6em;
+ }
+ header h1{
+   font-size: 2em;
+ }
+ header h3{
+   font-size: 1.1em;
+ }
+ .form .dados{
+   margin-top: 1.25rem;
+ }
+ .recup{
+   width: 45%;
+   padding: 0.625rem 1.25rem;
+ }
+}
+
+@media screen and (max-width: 1200px){
+ .form{
+   max-width: 58%;
+   padding: 2.4em 3.9em;
+ }
+ header h1{
+   font-size: 2em;
+ }
+ header h3{
+   font-size: 1em;
+ }
+ .recup{
+   width: 45%;
+   padding: 0.625rem 0.625rem;
+   font-size: small;
+ }
+}
+@media screen and (max-width: 768px){
+ .form{
+   max-width: 60%;
+   padding: 2em 3em;
+ }
+ .img_logo{
+   width: 55px;
+   margin-bottom: 0.8em;
+ }
+ header h1{
+   font-size: 1.5em;
+ }
+ header h3{
+   font-size: 0.9em;
+   margin-bottom: 1.2em;
+ }
+ .explic{
+   font-size: 0.8em;
+ }
+ .form .dados{
+   height: 2.8rem;
+   margin: 1.2rem auto;
+   border-radius: 0.37rem;
+ }
+ .dados input{
+ font-size: small;
+ }
+ .eye-icon{
+   font-size: 1em;
+ }
+ .form-link .txtRem,
+ .form-link a{
+   font-size: small;
+ }
+ .sign{
+   height: 3em;
+   font-size: small;
+ }
+ .recup{
+   width: 45%;
+   height: 3.3em;
+   padding: 0.625rem 0.625rem;
+   font-size: 0.7em;
+ }
+}
+
+@media screen and (max-width: 425px) {
+ .form{
+   max-width: 75%;
+   padding: 1.5em 1.5em;
+   border-radius: 0.3em;
+ }
+ .img_logo{
+   width: 45px;
+   margin-bottom: 0.5em;
+ }
+ header h1{
+   font-size: large;
+   margin-bottom: 0.3rem;
+ }
+ header h3{
+   font-size: small;
+   margin-bottom: 0.3em;
+ }
+ .explic{
+   font-size: 0.6em;
+ }
+ .form .dados{
+   height: 2.4rem;
+   margin: 1rem auto;
+   border-radius: 0.3rem;
+ }
+ .dados input{
+ font-size: x-small;
+ }
+ .eye-icon{
+   font-size: 0.9em;
+ }
+ #lembrar{
+   width: 0.9em;
+   height: 0.9em;
+ }
+ .form-link .txtRem,
+ .form-link a{
+   font-size: x-small;
+ }
+ .sign{
+   height: 2.8em;
+   padding: 0.7em 1em;
+   font-size: 0.7em;
+ }
+ .recup{
+   width: 45%;
+   height: 3.1em;
+   padding: 10px 5px;
+   font-size: 0.5em;
+ }
+ 
+}
